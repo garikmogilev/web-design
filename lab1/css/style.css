@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+input
+{
+    display: block;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+select
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+}
+
+option
+{
+    display: flex;
+}
+/******* ID *******/
+#result
+{
+    padding: 10px;
+    width: 400px;
+    height: 28px;
+    background-color: #cacaca;
+    border: #000000 2px solid;
+    margin-bottom: 20px;
+}
+#inp
+{
+
+}
+
+#sel
+{
+    display: block;
+    width: 200px;
+}

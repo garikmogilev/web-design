@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+footer img
+{
+    position: absolute;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.smokeSlowly
+{
+    animation: 35s linear 0s normal none infinite running animate;
+}
+
+.reSmokeSlowly
+{
+    animation: 35s linear 0s normal none infinite running animateReverse;
+}
+
+.smoke
+{
+    animation: 30s linear 0s normal none infinite running animate;
+}
+
+.reSmoke
+{
+    animation: 30s linear 0s normal none infinite running animateReverse;
+
+}
+
+.smokeFast
+{
+    animation: 25s linear 0s normal none infinite running animate;
+}
+
+.reSmokeFast
+{
+    animation: 25s linear 0s normal none infinite running animateReverse;
+
+}
+
+footer
+{
+    background-color: black;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animateReverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
