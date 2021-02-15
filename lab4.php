@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>web-design</title>
@@ -68,45 +68,45 @@
         let resmokefast = $('.reSmokeFast');
 
         setInterval(()=>{
-            smoke.animate({ left:'39%', opacity: '0.6' }, 6000, 'linear');
-            smoke.animate({ left:'42%', opacity: '0.5' }, 4000, 'linear');
+            smoke.animate({ left:'41%', opacity: '0.6' }, 6000, 'linear');
+            smoke.animate({ left:'43%', opacity: '0.5' }, 4000, 'linear');
             smoke.animate({ left:'45%', opacity: '0.4' }, 5000, 'linear');
-            smoke.animate({ left:'42%', opacity: '0.5' }, 5000, 'linear');
+            smoke.animate({ left:'43%', opacity: '0.5' }, 5000, 'linear');
         },20000);
 
         setInterval(()=>{
-            resmoke.animate({ left:'40%', opacity: '0.6' }, 2000, 'linear');
-            resmoke.animate({ left:'43%', opacity: '0.5' }, 4000, 'linear');
+            resmoke.animate({ left:'42%', opacity: '0.6' }, 2000, 'linear');
+            resmoke.animate({ left:'44%', opacity: '0.5' }, 4000, 'linear');
             resmoke.animate({ left:'46%', opacity: '0.4' }, 8000, 'linear');
-            resmoke.animate({ left:'43%', opacity: '0.5' }, 2000, 'linear');
+            resmoke.animate({ left:'44%', opacity: '0.5' }, 2000, 'linear');
         },16000);
 
         setInterval(()=>{
-            resmokeSlowly.animate({ left:'40%', opacity: '0.6' }, 4000, 'linear');
-            resmokeSlowly.animate({ left:'43%', opacity: '0.5' }, 6000, 'linear');
+            resmokeSlowly.animate({ left:'42%', opacity: '0.6' }, 4000, 'linear');
+            resmokeSlowly.animate({ left:'44%', opacity: '0.5' }, 6000, 'linear');
             resmokeSlowly.animate({ left:'46%', opacity: '0.4' }, 2000, 'linear');
-            resmokeSlowly.animate({ left:'43%', opacity: '0.5' }, 2000, 'linear');
+            resmokeSlowly.animate({ left:'44%', opacity: '0.5' }, 2000, 'linear');
         },14000);
 
         setInterval(()=>{
             resmokefast.animate({ left:'44%', opacity: '0.6' }, 4000, 'linear');
-            resmokefast.animate({ left:'41%', opacity: '0.5' }, 6000, 'linear');
-            resmokefast.animate({ left:'38%', opacity: '0.4' }, 4000, 'linear');
-            resmokefast.animate({ left:'41%', opacity: '0.5' }, 4000, 'linear');
+            resmokefast.animate({ left:'42%', opacity: '0.5' }, 6000, 'linear');
+            resmokefast.animate({ left:'40%', opacity: '0.4' }, 4000, 'linear');
+            resmokefast.animate({ left:'42%', opacity: '0.5' }, 4000, 'linear');
         },18000);
 
         setInterval(()=>{
-            smokeSlowly.animate({ left:'46%', opacity: '0.6' }, 3000, 'linear');
-            smokeSlowly.animate({ left:'43%', opacity: '0.5' }, 6000, 'linear');
+            smokeSlowly.animate({ left:'44%', opacity: '0.6' }, 3000, 'linear');
+            smokeSlowly.animate({ left:'42%', opacity: '0.5' }, 6000, 'linear');
             smokeSlowly.animate({ left:'40%', opacity: '0.4' }, 4000, 'linear');
-            smokeSlowly.animate({ left:'43%', opacity: '0.5' }, 2000, 'linear');
+            smokeSlowly.animate({ left:'42%', opacity: '0.5' }, 2000, 'linear');
         },15000);
 
         setInterval(()=>{
-            smokeFast.animate({ left:'42%', opacity: '0.6' }, 3000, 'linear');
-            smokeFast.animate({ left:'45%', opacity: '0.5' }, 6000, 'linear');
+            smokeFast.animate({ left:'44%', opacity: '0.6' }, 3000, 'linear');
+            smokeFast.animate({ left:'46%', opacity: '0.5' }, 6000, 'linear');
             smokeFast.animate({ left:'48%', opacity: '0.4' }, 4000, 'linear');
-            smokeFast.animate({ left:'45%', opacity: '0.5' }, 2000, 'linear');
+            smokeFast.animate({ left:'46%', opacity: '0.5' }, 2000, 'linear');
         },15000);
 
     });

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>web-design</title>
@@ -26,6 +26,7 @@
   <img class="container_header" src="img/webdesign-services-why-i-should-have-a-website-for-my-business.jpg" alt=""/>
 
 </header>
+
 <div id="authorization">
     <p><span class="black">LOG IN</span> <span class="gray">or</span> <span class="yellow">SIGN UP</span></p>
     <hr/>
@@ -41,6 +42,7 @@
         <label for="password">Password &#x1F511;</label>
         <input id="password" type="password" name="password" placeholder="Password" class="showPassword" onkeyup="checkPassword(this.value)">
     </p>
+
     <div id="serving">
         <p id="errorInput"></p>
          <p class="checkBox" >
@@ -65,7 +67,10 @@
 <footer>
 
 </footer>
-<script type="application/javascript" language="JavaScript">
+
+
+<script type="application/javascript">
+
     let login = false;
     let password = false;
     let request;
@@ -85,7 +90,6 @@
     {
             let show = document.getElementById("showPassword");
             show.onchange = function() {
-
                 if(this.checked) {
                     document.getElementById("password").setAttribute("type", "text");
                 }else {
@@ -126,31 +130,34 @@
     }
 
     function register(){
-        let valueLogin = document.getElementsByName("login")[0].value;
-        let valuePass = document.getElementsByName("password")[0].value;
-        newRequest();
-        request.open("get", "lab2/register.php?login=" + valueLogin + "&password=" + valuePass, false);
-        request.send(null);
-        result = request.responseText;
-
-        document.getElementById("errorInput").innerHTML =result;
+        if(login && password) {
+            let valueLogin = document.getElementsByName("login")[0].value;
+            let valuePass = document.getElementsByName("password")[0].value;
+            newRequest();
+            request.open("get", "lab2/register.php?login=" + valueLogin + "&password=" + valuePass, false);
+            request.send(null);
+            result = request.responseText;
+            document.getElementById("errorInput").innerHTML = result;
+        }
     }
 
     function logIn()
     {
-        let valueLogin = document.getElementsByName("login")[0].value;
-        let valuePass = document.getElementsByName("password")[0].value;
-        newRequest();
-        request.open("get", "lab2/login.php?login=" + valueLogin + "&password=" + valuePass, false);
-        request.send(null);
-        result = request.responseText;
+        if(login && password) {
+            let valueLogin = document.getElementsByName("login")[0].value;
+            let valuePass = document.getElementsByName("password")[0].value;
+            newRequest();
+            request.open("get", "lab2/login.php?login=" + valueLogin + "&password=" + valuePass, false);
+            request.send(null);
+            result = request.responseText;
 
-        if(result === "Login seccusfull"){
-            document.getElementById("errorInput").style.color = "green";
-        }else {
-            document.getElementById("errorInput").style.color = "red";
+            if (result === "Login seccusfull") {
+                document.getElementById("errorInput").style.color = "green";
+            } else {
+                document.getElementById("errorInput").style.color = "red";
+            }
+            document.getElementById("errorInput").innerHTML = result;
         }
-        document.getElementById("errorInput").innerHTML = result;
     }
 
 </script>

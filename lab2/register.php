@@ -1,5 +1,5 @@
 <?php
-/*данные для входа в Ane4kaBD*/
+
 $hostname = 'localhost';
 $db_username = 'root';
 $db_password = '';
@@ -27,6 +27,7 @@ for ($i = 0;$row = mysqli_fetch_assoc($rows);$i++){
 $salt = '$5$rounds=5000$anexamplestringforsalt$';   // SHA-256
 
 $passwordCrypt = crypt($password,$salt);
+
 $mysqli->query("INSERT INTO user(login,password) VALUES ('$login','$passwordCrypt')");
 print "You registered";
 ?>

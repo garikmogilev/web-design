@@ -19,6 +19,7 @@ $bd = 'SELECT * FROM user';
 $rows = $mysqli->query($bd);
 
 $salt = '$5$rounds=5000$anexamplestringforsalt$';   // SHA-256
+
 $passwordCrypt = crypt($password, $salt);
 
 for ($i = 0; $row = mysqli_fetch_assoc($rows); $i++) {
