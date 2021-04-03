@@ -11,33 +11,37 @@ footer img
 .smokeSlowly
 {
     animation: 35s linear 0s normal none infinite running animate;
+    opacity: 0.5;
 }
 
 .reSmokeSlowly
 {
     animation: 35s linear 0s normal none infinite running animateReverse;
+    opacity: 0.5;
 }
 
 .smoke
 {
     animation: 30s linear 0s normal none infinite running animate;
+    opacity: 0.5;
 }
 
 .reSmoke
 {
     animation: 30s linear 0s normal none infinite running animateReverse;
-
+    opacity: 0.5;
 }
 
 .smokeFast
 {
     animation: 25s linear 0s normal none infinite running animate;
+    opacity: 0.5;
 }
 
 .reSmokeFast
 {
     animation: 25s linear 0s normal none infinite running animateReverse;
-
+    opacity: 0.5;
 }
 
 footer

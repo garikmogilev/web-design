@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/********   TAG  ********/
+
+/******** CLASSES *******/
+
+.sender{
+    text-align: left;
+    padding: 5px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.container_message{
+    background-color: cornsilk;
+    border-radius: 10px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.message{
+    margin: 10px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.menuItemMessages{
+    cursor: pointer;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+.container_message{
+    padding: 5px;
+    margin: 5px;
+    border: black 1px solid;
+}
+
+/********   ID    *******/
+#container_messages {
+    float: right;
+    height: auto;
+    margin-top: 100px;
+    width: 900px;
+    padding: 0;
+    background-color: #79b7f3;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0 ;
+}
+
+#container_sources{
+    float: left;
+    height: auto;
+    margin-top:100px;
+    width: 188px;
+    padding: 0;
+}
+
+#writeMail{
+    display: none;
+    float: right;
+    height: auto;
+    margin-top: 100px;
+    padding: 0;
+    background-color: darkorange;
+}
+
+#inputMessage{
+    width: 900px;
+    min-height: 400px;
+    resize: vertical;
+}
+
+#newMessage{
+    background-color: darkorange;
+}
+
+#inbox{
+    background-color: #79b7f3;
+}
+
+#closeSession{
+    background-color: #aaaaa7;
+}
+
+#user{
+    color: darkslategrey;
+}
+
+#buttonSend{
+    margin: 5px;
+    font-size: 18px;
+}
+
+#imgMailBox {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#countMessages{
+    position: absolute;
+    top:179px;
+    margin-left:27px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+#inboxHead{
+    color: white;
+    margin: 10px;
+}

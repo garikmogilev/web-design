@@ -29,6 +29,5 @@ $salt = '$5$rounds=5000$anexamplestringforsalt$';   // SHA-256
 $passwordCrypt = crypt($password,$salt);
 
 $mysqli->query("INSERT INTO users.user(login,password) VALUES ('$login','$passwordCrypt')");
-
 print "You registered";
 ?>

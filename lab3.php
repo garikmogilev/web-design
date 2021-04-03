@@ -34,16 +34,13 @@
     <button id="fourthButton">Load php from file script.php</button>
 </header>
 
-<footer>
-
-</footer>
-<script type="application/javascript" language="JavaScript">
+<script type="application/javascript">
     $(document).ready(function(){
         $("#firstButton").click(function(){
             $("#result").load("lab3/text.txt");
         });
         $("#secondButton").click(function(){
-            $("#result").load("lab3/list.html");
+            $("#result").load("lab3/list.html #list");
         });
         $("#thirdButton").click(function(){
             $("#result").load("lab3/script.html");
@@ -52,8 +49,8 @@
             $("#result").load(
                 "lab3/script.php",
                 {
-                    param1: "Hello",
-                    param2: "world"
+                    param1: "Web",
+                    param2: "design"
                 },
                 function(){alert("Получен ответ от сервера.")}
             );

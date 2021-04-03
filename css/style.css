@@ -3,14 +3,12 @@
 /******* tags ********/
 body
 {
-    width: 1292px;
+    width: 1175px;
     margin: 0 auto;
     font-family: sans-serif;
     background-color: #dae5e7;
 }
-header{
-    height: 800px;
-}
+
 ul {
     position: absolute;
     top: 0;

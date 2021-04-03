@@ -29,12 +29,12 @@
 </header>
 
 <footer>
-        <img id="img1" class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
-        <img id="img2" class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
-        <img id="img3" class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
-        <img id="img4" class="smoke" src="img/Smoke-Element.png" alt=""/>
-        <img id="img5" class="smoke" src="img/Smoke-Element.png" alt=""/>
-        <img id="img6"  class="smoke" src="img/Smoke-Element.png" alt=""/>
+        <img class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
+        <img class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
+        <img class="smokeSlowly" src="img/Smoke-Element.png" alt=""/>
+        <img class="smoke" src="img/Smoke-Element.png" alt=""/>
+        <img class="smoke" src="img/Smoke-Element.png" alt=""/>
+        <img class="smoke" src="img/Smoke-Element.png" alt=""/>
         <img class="smoke" src="img/Smoke-Element.png" alt=""/>
         <img class="smokeFast" src="img/Smoke-Element.png" alt=""/>
         <img class="smokeFast" src="img/Smoke-Element.png" alt=""/>
@@ -54,6 +54,7 @@
 <script type="application/javascript" language="JavaScript">
     $(document).ready(function(){
         var collectionImg = $('img');
+
         for (i = 1; i < 20;i++){
             collectionImg[i].width = Math.random()*200+157;
             collectionImg[i].style.top = Math.random()*400-100 + 'px';
@@ -65,49 +66,63 @@
         let smokeFast = $('.smokeFast');
         let resmokeSlowly = $('.reSmokeSlowly');
         let resmoke = $('.reSmoke');
-        let resmokefast = $('.reSmokeFast');
+        let reSmokeFast = $('.reSmokeFast');
 
-        setInterval(()=>{
-            smoke.animate({ left:'41%', opacity: '0.6' }, 6000, 'linear');
-            smoke.animate({ left:'43%', opacity: '0.5' }, 4000, 'linear');
-            smoke.animate({ left:'45%', opacity: '0.4' }, 5000, 'linear');
-            smoke.animate({ left:'43%', opacity: '0.5' }, 5000, 'linear');
-        },20000);
+        animateNormal();
+        animateReNormal();
+        animateFast();
+        animateReFast();
+        animateSlowly();
+        animateReSlowly();
 
-        setInterval(()=>{
-            resmoke.animate({ left:'42%', opacity: '0.6' }, 2000, 'linear');
-            resmoke.animate({ left:'44%', opacity: '0.5' }, 4000, 'linear');
-            resmoke.animate({ left:'46%', opacity: '0.4' }, 8000, 'linear');
-            resmoke.animate({ left:'44%', opacity: '0.5' }, 2000, 'linear');
-        },16000);
+        function animateNormal() {
+            smoke.animate({left: '41%', opacity: '0.6'}, 6000, 'linear');
+            smoke.animate({left: '43%', opacity: '0.5'}, 4000, 'linear');
+            smoke.animate({left: '45%', opacity: '0.4'}, 5000, 'linear');
+            smoke.animate({left: '43%', opacity: '0.5'}, 5000, 'linear');
+        }
 
-        setInterval(()=>{
-            resmokeSlowly.animate({ left:'42%', opacity: '0.6' }, 4000, 'linear');
-            resmokeSlowly.animate({ left:'44%', opacity: '0.5' }, 6000, 'linear');
-            resmokeSlowly.animate({ left:'46%', opacity: '0.4' }, 2000, 'linear');
-            resmokeSlowly.animate({ left:'44%', opacity: '0.5' }, 2000, 'linear');
-        },14000);
+        function animateReNormal() {
+            resmoke.animate({left: '42%', opacity: '0.6'}, 2000, 'linear');
+            resmoke.animate({left: '44%', opacity: '0.5'}, 4000, 'linear');
+            resmoke.animate({left: '46%', opacity: '0.4'}, 8000, 'linear');
+            resmoke.animate({left: '44%', opacity: '0.5'}, 2000, 'linear');
+        }
 
-        setInterval(()=>{
-            resmokefast.animate({ left:'44%', opacity: '0.6' }, 4000, 'linear');
-            resmokefast.animate({ left:'42%', opacity: '0.5' }, 6000, 'linear');
-            resmokefast.animate({ left:'40%', opacity: '0.4' }, 4000, 'linear');
-            resmokefast.animate({ left:'42%', opacity: '0.5' }, 4000, 'linear');
-        },18000);
+        function animateReSlowly() {
+            resmokeSlowly.animate({left: '42%', opacity: '0.6'}, 4000, 'linear');
+            resmokeSlowly.animate({left: '44%', opacity: '0.5'}, 6000, 'linear');
+            resmokeSlowly.animate({left: '46%', opacity: '0.4'}, 2000, 'linear');
+            resmokeSlowly.animate({left: '44%', opacity: '0.5'}, 2000, 'linear');
+        }
 
-        setInterval(()=>{
-            smokeSlowly.animate({ left:'44%', opacity: '0.6' }, 3000, 'linear');
-            smokeSlowly.animate({ left:'42%', opacity: '0.5' }, 6000, 'linear');
-            smokeSlowly.animate({ left:'40%', opacity: '0.4' }, 4000, 'linear');
-            smokeSlowly.animate({ left:'42%', opacity: '0.5' }, 2000, 'linear');
-        },15000);
+        function animateReFast(){
+            reSmokeFast.animate({left: '44%', opacity: '0.6'}, 4000, 'linear');
+            reSmokeFast.animate({left: '42%', opacity: '0.5'}, 6000, 'linear');
+            reSmokeFast.animate({left: '40%', opacity: '0.4'}, 4000, 'linear');
+            reSmokeFast.animate({left: '42%', opacity: '0.5'}, 4000, 'linear');
+        }
 
-        setInterval(()=>{
-            smokeFast.animate({ left:'44%', opacity: '0.6' }, 3000, 'linear');
-            smokeFast.animate({ left:'46%', opacity: '0.5' }, 6000, 'linear');
-            smokeFast.animate({ left:'48%', opacity: '0.4' }, 4000, 'linear');
-            smokeFast.animate({ left:'46%', opacity: '0.5' }, 2000, 'linear');
-        },15000);
+        function animateSlowly() {
+            smokeSlowly.animate({left: '44%', opacity: '0.6'}, 3000, 'linear');
+            smokeSlowly.animate({left: '42%', opacity: '0.5'}, 6000, 'linear');
+            smokeSlowly.animate({left: '40%', opacity: '0.4'}, 4000, 'linear');
+            smokeSlowly.animate({left: '42%', opacity: '0.5'}, 2000, 'linear');
+        }
+
+        function animateFast(){
+            smokeFast.animate({left: '44%', opacity: '0.6'}, 3000, 'linear');
+            smokeFast.animate({left: '46%', opacity: '0.5'}, 6000, 'linear');
+            smokeFast.animate({left: '48%', opacity: '0.4'}, 4000, 'linear');
+            smokeFast.animate({left: '46%', opacity: '0.5'}, 2000, 'linear');
+        }
+
+        setInterval(animateNormal,20000);
+        setInterval(animateReNormal,16000);
+        setInterval(animateReSlowly,14000);
+        setInterval(animateReFast,18000);
+        setInterval(animateSlowly,15000);
+        setInterval(animateFast,15000);
 
     });
 </script>
