@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<people>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ФИТ">1</id>
+    </student>
+    <student>
+        <first_name>Сидор</first_name>
+        <last_name>Иванов</last_name>
+        <id faculty="ТОВ">2</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Сидоров</last_name>
+        <id faculty="ТОВ">3</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ФИТ">4</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ФИТ">5</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ХТиТ">6</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ХТиТ">7</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ХТиТ">8</id>
+    </student>
+    <student>
+        <first_name>Петр</first_name>
+        <last_name>Петров</last_name>
+        <id faculty="ТОВ">9</id>
+    </student>
+    <student>
+        <first_name>Николай</first_name>
+        <last_name>Сидоров</last_name>
+        <id faculty="ФИТ">10</id>
+    </student>
+
+</people>
